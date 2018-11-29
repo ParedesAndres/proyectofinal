@@ -8,8 +8,16 @@
 <body>
     
     <a-scene id="canvas"  class="fullscreen">
+
+        <a-assets>
+            <video id="video" autoplay loop="true"
+ src="video/cristiano.mp4" webkit-playsinline></video>
+        </a-assets>
+
         <a-sky src="img/fondo.jpg" rotation="0 -138 0"></a-sky>
-        <a-text font=""></a-text>
+        <a-text  value="Bienvenidos" width="6" position="-2.5 0.25 -1.5">Hola amigos de Youtube</a-text>
+    
+        <a-video src="#video" width="16" height="9" position="0 1 -10"></a-video>
     </a-scene>
 
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
